@@ -61,7 +61,8 @@ body {
 
 /* Footer */
 .footer {
-  margin-top: auto;
+  position: absolute;  /* Ensure the footer stays at the bottom */
+  bottom: 0;
   width: 100%;
   text-align: center;
   padding: 15px;
@@ -69,9 +70,8 @@ body {
   background: rgba(0, 0, 0, 0.2);
   color: white;
   font-family: "Comfortaa", sans-serif;
-  position: absolute;
-  bottom: 0;
 }
+
 
 .footer a {
   color: white;
