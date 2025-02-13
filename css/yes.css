@@ -59,6 +59,7 @@ body {
   text-align: center;
 }
 
+/* Footer */
 .footer {
   position: absolute;  /* Ensure the footer stays at the bottom */
   bottom: 0;
@@ -69,6 +70,22 @@ body {
   background: rgba(0, 0, 0, 0.2);
   color: white;
   font-family: "Comfortaa", sans-serif;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height */
+    justify-content: space-between; /* Ensures footer is at the bottom */
+  }
+  
+  .footer {
+    position: relative; /* Move the footer position to relative */
+    margin-top: auto;
+    margin-bottom:20px;/* Push the footer to the bottom of the page */
+  }
 }
 
 
