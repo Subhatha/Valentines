@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gif-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.btn button {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  min-width: 160px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Yes button */
+#yes {
+  background-color: #ff4f7b;
+  color: white;
+}
+
+#yes:hover {
+  background-color: #ff3366;
+  transform: scale(1.1);
+}
+
+/* No button */
+#no {
+  background-color: #333;
+  color: white;
+}
+
+#no:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.name {
+  font-weight: 700;
+  color: #ffe66d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+  
+  .question {
+    font-size: 2rem;
+  }
+
+  .btn button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .gif-img {
+    max-width: 80%;
+  }
+
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn button {
+    width: 100%; /* Ensures equal width */
+    font-size: 1.3rem;
+    padding: 15px 0;
+    min-width: 180px; /* Ensures consistency */
+  }
+}
+
+@media (max-width: 480px) {
+  .question {
+    font-size: 1.5rem;
+  }
+
+  .btn button {
+    font-size: 1.2rem;
+    padding: 14px 0;
+    min-width: 180px;
+  }
+}
+
