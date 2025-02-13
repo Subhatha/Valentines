@@ -57,12 +57,9 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
-  margin-bottom:50px;
 }
 
-/* Footer */
 .footer {
-  top:100px;
   position: absolute;  /* Ensure the footer stays at the bottom */
   bottom: 0;
   width: 100%;
