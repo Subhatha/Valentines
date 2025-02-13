@@ -84,7 +84,6 @@ body {
   .footer {
     position: relative; /* Move the footer position to relative */
     margin-top: auto;
-    margin-bottom:20px;/* Push the footer to the bottom of the page */
   }
 }
 
